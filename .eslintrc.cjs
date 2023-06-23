@@ -3,11 +3,11 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
 	extends: [
 		'plugin:react/recommended',
 		'plugin:react/jsx-runtime',
@@ -20,5 +20,9 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: ['react'],
-	rules: {},
+	rules: {
+		'no-unused-vars': 'off',
+		'react/prop-types': 'off',
+		'react/react-in-jsx-scope': 'off',
+	},
 };
